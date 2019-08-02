@@ -1,5 +1,9 @@
 env:
   - TEST_SUITE=units
   - TEST_SUITE=integration
+  
+os:
+ - linux
+ - osx  
 
 script: "bundle exec rake test:$TEST_SUITE"
